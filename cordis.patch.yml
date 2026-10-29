@@ -1,0 +1,7 @@
+# Browser-only recent-sessions list. The inserted file entry gives the bundle
+# a cordis face (host-side apply is a no-op); the client-module system finds
+# the `dsh.client` declaration in this package's manifest and adds the browser
+# bundle to the boot graph under the package name.
+- insert:
+    - id: recent-sessions
+      name: ./lib/index.js
