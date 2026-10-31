@@ -1,6 +1,6 @@
 {
 	"name": "dsh-recent-sessions",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "DSH Web GUI 插件：在侧栏工作区浏览器上方显示最近使用的会话列表（宽栏 5 行 / 窄栏头像列），点击即通过现有 uiWorkspace.openSession 通道打开会话。",
 	"engines": {
 		"dsh": ">=0.2.1-rc.2"
