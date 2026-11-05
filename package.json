@@ -1,7 +1,7 @@
 {
 	"name": "dsh-recent-sessions",
-	"version": "0.1.2",
-	"description": "DSH Web GUI 插件：在侧栏工作区浏览器上方显示最近使用的会话列表（宽栏 5 行 / 窄栏头像列），点击即通过现有 uiWorkspace.openSession 通道打开会话。",
+	"version": "0.1.3",
+	"description": "DSH Web GUI 插件：在侧栏工作区浏览器上方显示最近使用的会话列表（宽栏多行 / 窄栏头像列），点击即通过现有 uiWorkspace.openSession 通道打开会话。条数与是否包含子会话可在插件配置页调整。",
 	"engines": {
 		"dsh": ">=0.2.1-rc.2"
 	},
@@ -11,6 +11,9 @@
 		".": "./lib/index.js",
 		"./client": "./lib/client.js",
 		"./package.json": "./package.json"
+	},
+	"dependencies": {
+		"@deepseek-ai/schemastery": "~3.18.5"
 	},
 	"files": [
 		"lib/index.js",
@@ -30,7 +33,9 @@
 				"@deepseek-ai/dsh-client-ui-renderer",
 				"@deepseek-ai/dsh-client-ui-session",
 				"@deepseek-ai/dsh-client-ui-workspace",
-				"@deepseek-ai/dsh-client-ui-sidebar"
+				"@deepseek-ai/dsh-client-ui-sidebar",
+				"@deepseek-ai/dsh-client-ui-plugin-manager",
+				"@deepseek-ai/dsh-client-ui-settings"
 			]
 		}
 	}
